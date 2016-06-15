@@ -1,0 +1,616 @@
+\input{configuration}
+
+\title{Lecture 4 --- Contracts: Intro, Offers }
+
+\author{Jeff Zarnett \\ \small \texttt{jzarnett@uwaterloo.ca}}
+\institute{Department of Electrical and Computer Engineering \\
+  University of Waterloo}
+\date{\today}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+
+\begin{center}
+  \small{Acknowledgments: Douglas Harder~\cite{dwh}, Julie Vale~\cite{jv}}
+  \end{center}
+\end{frame}
+
+
+\part{Introduction to Contracts}
+
+\begin{frame}
+\partpage
+\end{frame}
+
+\begin{frame}
+\frametitle{Contract Law}
+
+We may think of laws as rules that constrain people for the benefit of society.
+
+Criminal law, for example, forbids certain actions.\\
+\quad This obligation is placed on everyone involuntarily.
+
+But the law enables us to enter voluntarily into obligations (agreements). 
+
+Making deals or bargains is fundamental to society.\\
+\quad But there must be rules to ensure fairness and consistency.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{What is a Contract?}
+
+The Oxford English Dictionary defines a contract as:
+
+\begin{quote}
+	A mutual agreement between two or more parties that something shall be done or forborne by one or both; a compact, covenant, bargain; especially such as has legal effects; a convention between states.
+\end{quote}~\\
+\begin{quote}
+	A business agreement for the supply of certain articles or the performance of specified work at a certain price, rate, or commission.
+\end{quote}~\\
+\begin{quote}
+	An agreement enforceable by law.
+\end{quote}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Why Contracts?}
+
+Contracts \textit{expand} a person's freedom of choice~\cite{lba}.
+
+If someone wishes something, he or she may bargain for it, by entering into an obligation for others in exchange for it.
+
+This happens in the small all the time.\\
+\quad If I want a pizza, I am willing to spend money to receive it.
+
+A co-op job is the same: you agree to work for an employer in exchange for pay.
+
+Money does not have to be involved.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Trust}
+
+But we do, however, need \alert{trust}.
+
+Without trust, people will not enter into contracts because they cannot be sure that the other party will uphold his/her end of the bargain.
+
+The law is a facilitative process, a passive framework where people can decide and bargain on their own~\cite{lba}.
+
+Importantly, trust in the other party is replaced with trust in the legal system:\\
+\quad If the other party does not uphold his/her end, the law provides recourse.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Good and Bad Deals}
+
+The law, however, does not prevent people from making bad deals.
+
+I can decide to sell my car for \$10. Does this mean it was a good deal?
+
+All that matters is a contract be legally enforceable.
+
+How do we tell if a contract is legally enforceable?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Contract Examples}
+
+Which of these are legally enforceable?
+
+\begin{enumerate}
+	\item ``I'll give you \$999 for that Blackberry Z10.''
+	\item ``Hey kid, I'll buy your tricycle for \$3.''
+	\item ``Sure, I'll sell you my car for another bottle of Scotch.''
+	\item ``I'll give you my CD collection for free.''
+	\item ``Here's \$50, now give my your iPod; I paid you!''
+	\item ``I gave my dealer \$40 and he gave me sugar! Make him give me my crack!''\footnote{Yup, this happened. \url{www.thesmokinggun.com/buster/woman-complains-about-crack-dealer-765412}}
+\end{enumerate}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Components of a Legal Contract}
+
+Over time, common law converged on the following essential elements for an agreement to be legally enforceable:
+
+\begin{enumerate}
+	\item An offer is made and accepted
+	\item There is mutual intent to enter into the contract\footnote{This is sometimes called ``meeting of the minds''}
+	\item Consideration
+	\item Capacity
+	\item Lawful purpose
+\end{enumerate}
+
+If any one of those items is absent, the contract will not be legally enforceable.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Legally Enforceable}
+
+Any agreement, even one not in writing, that possesses all five elements is enforceable.
+
+Proving the existence of the contract may be harder if it is not in writing, but it may still be formed.
+
+Even if the contract is unfair, it will be enforced.
+
+If one element is absent, the courts will decline to intervene.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Intervention}
+
+The terms in a contract include any benefits and obligations usually arrived at through negotiation and then agreement.
+
+The courts will be willing to step in if a party to a contract does not fulfill its obligations under the terms.
+
+Courts will not, however, alter the terms of a contract in favour of more fair or just terms than those that were decided upon.
+
+The courts may, however, declare a contract void, voidable, or unenforceable.
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Changing a Contract}
+
+A contract can be, through mutual agreement, altered (up to a point).
+
+The changes must fall within the scope of the original contract.
+
+A contact to build a house may change the design or add a shed.
+
+But a contract to design an apartment cannot be modified to design a house.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Assigning Rights}
+
+The benefits of a contract can be assigned unilaterally by one party to another independent party.
+
+The contract must contain a term forbidding this if one of the parties does not wish such an assignment of rights.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Breach of Contract}
+
+When a party does not fulfill one of its obligations under the contract, that party is said to have breached a term of the contract.
+
+The party that is to benefit from a breached term in a contract is the \textit{injured~party}.
+
+The injured party can approach a judge to remedy the injury.
+
+Breach of contract is complex and we will return to this...
+
+\end{frame}
+
+\part{Contracts: Making the Offer}
+\begin{frame}
+\partpage
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Offer}
+
+Each contract has one party that is presenting the contract to the other.
+
+This party is called the \alert{offeror}.\\
+The party to whom the contract is offered is the \alert{offeree}.
+
+The offeree may choose to:
+\begin{itemize}
+	\item Accept the contract
+	\item Reject the contract
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Acceptance}
+
+If a contract is accepted, it must be clearly communicated to the offeror in an acceptable manner.
+
+Example: you sign the employment contract and mail it to the employer.
+
+Acceptance requires a positive action; the offeror cannot make silence a mode of acceptance, forcing the offeree to actively speak up to avoid the contract.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Carbolic Smoke}
+Consider the 1893 case of \textit{Carlill v. Carbolic Smoke Co.}:
+
+Carbolic Smoke Ball was a product intended to prevent influenza.
+
+They created an ad in the paper claiming they would pay \textsterling100 to any person who contracts influenza after using the ball three times per day for two weeks.
+
+Carlill bought a ball and used it from 20 November, 1891.\\
+\quad She caught influenza on 17 January, 1892.
+
+Did this constitute a contract?
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Conduct}
+
+Yes: an offer can also be accepted through \alert{conduct}.
+ 
+Carlill accepted the contract by performance.\\
+\quad ... But did the company intend to make a contract? We shall return to this...
+
+Another example: you submit a bid for work in response to a call for bids.
+
+We will come back to the idea of acceptances later.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Just Say No}
+
+The offeree can also decline or reject the contract. 
+
+Rejection may be formal (e.g., sending a letter to decline).
+
+An offer may \alert{lapse} -- become invalid -- if conduct demonstrates rejection, or if a reasonable amount of time has passed.
+
+Example: A and B offer to buy property owned by C. If C accepts B's offer, this necessarily is a rejection of A's offer.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Counter-Offer}
+
+Suppose the offeree does not agree, and modifies the terms and sends it back. 
+
+This is what is called a \alert{counter-offer}. 
+
+Does this counter-offer render the original offer invalid?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Counter-Offer Case Law}
+
+\textit{Hyde v. Wrench}, 1840.
+
+\begin{enumerate}
+	\item Wrench offers to sell his farm for \textsterling1200; Hyde declines.
+	\item Wrench makes a final offer to sell for \textsterling1000; declined by Hyde.
+	\item Hyde makes a counter-offer of \textsterling950. 20 days later, Wrench declines.
+	\item Two days later, Hyde agrees to buy it for \textsterling1000 and Wrench refuses to sell.
+	\item Hyde sues for breach of contract.
+\end{enumerate}
+
+Did Hyde's counter-offer render Wrench's \textsterling1000 offer invalid?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Counter-Offer}
+
+A counter-offer signals rejection of the original offer.\\
+\quad Even if no formal rejection is sent.
+
+With a counter-offer, the original offeree has made a new offer that the original offeror may accept or reject.
+
+A query for further information, however, is not a rejection of the initial offer.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{\textit{Hyde v. Wrench}}
+
+Lord Lansdale's ruling on the case:
+
+\begin{quote}
+Under the circumstances stated in this bill, I think there exists no valid binding contract between the parties for the purchase of this property. The defendant offered to sell it for \textsterling1000, and if that had been at once unconditionally accepted there would undoubtedly have been a perfect binding contract; instead of that, the plaintiff made an offer of his own, to purchase the property for \textsterling950, and he thereby rejected the offer previously made by the defendant. I think that it was not afterwards competent for him to revive the proposal of the defendant, by tendering an acceptance of it; and that, therefore, there exists no obligation of any sort between the parties.
+\end{quote}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Nature of the Offer}
+
+The form of an offer is unimportant, as long as the proposal is conveyed to the other party.
+
+All of the following are equally valid~\cite{lba}:
+
+\begin{itemize}
+	\item ``I offer to sell you my car for \$500.''
+	\item ``I will sell you my car for \$500.''
+	\item ``I'll take \$500 for my car.''
+	\item ``Would you like to buy my car for \$500?''
+\end{itemize}
+
+In each case, the tentative promise is to sell the car if the offeree agrees to pay the named price.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Nature of the Offer}
+
+People may be under the impression that an offer must be in writing to be valid. 
+
+No, an oral offer is equally valid.
+
+An offer can also be communicated through conduct. 
+
+Example: raising a placard at an auction, or floor traders in a stock exchange.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Invitation}
+
+Suppose you see an ad in the newspaper: the newest iPhone for \$50.
+
+You show up at the store and find they they are sold out.
+
+They made an offer (iPhone) which you want to accept by conduct (going to the store and buying it).
+
+Can you sue the store for breach of contract?
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Invitation to Do Business}
+
+An invitation to do business is not an offer to make a contract~\cite{lba}. 
+
+A shirt displayed in a store window, for example, is not an offer to sell.
+
+These are advertising tools. 
+
+An advertising tool is just an invitation to do business\footnote{This is also called ``Invitation to Treat''. Think ``treaty'', not ``Let's have ice-cream, my treat.''}.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Invitation to Do Business}
+
+{\small\textit{Pharmaceutical Society of Great Britain v. Boots Cash Chemists (Southern) Ltd., 1952}:}
+
+\begin{quote}
+	The mere fact that a customer picks up a bottle of medicine from the shelves in this case does not amount to an acceptance of an offer to sell. It is an offer by the customer to buy, and there is no sale effected until the buyer's offer to buy is accepted by the acceptance of the price.
+\end{quote}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{No Clairvoyance}
+An offer cannot be accepted by the offeree until s/he has first learned of it.
+
+This is not as trite as it sounds. Consider the following example~\cite{lba}:
+
+Charles finds Donna's watch and returns it to her.
+
+Later, he learns that Donna was offering a \$50 reward for its safe return.
+
+Charles is not entitled to the reward; he did not act in response to the offer.\\
+\quad The offer must have been \alert{communicated} before it can be accepted.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Find the Nearest Postbox...}
+
+Another scenario, also from~\cite{lba}. 
+
+Evan writes a letter to Frank offering to sell his car for \$1500.
+
+Frank, meanwhile, has written a letter to Evan offering to buy Evan's car for \$1500 and their letters ``cross in the post''.
+
+Was a valid contract formed?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Communication of the Offer}
+
+No, a contract is not formed unless one party sends a subsequent acceptance. 
+
+Neither Evan nor Frank was aware of the other's letter at the time they wrote their own letters.
+
+Another scenario: suppose you are home and a young man knocks on the door.
+
+He has mowed your lawn, without asking you, and now asks to be paid \$20 for this hour's work.
+
+Do you owe him the \$20?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Forcible Lawnmowing Service}
+
+No -- you cannot be obligated by people who do work for you without your knowledge~\cite{lba}.
+
+You are entitled to receive an offer which you may then accept or reject.
+
+This should seem logical to you; if he said it was \$10~000, you would of course decry this is unfair because you had no option to decline the service.
+
+Relevant case law: \textit{Taylor v. Laird}.
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Withdrawing an Offer}
+
+An offer can be withdrawn by the offeror at any time before it is accepted.
+
+This makes the offer invalid; a subsequent acceptance has no effect.
+
+Once the offeree accepts, however, the contract is established.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Timing}
+
+If an offer is made through the post (or courier service), there are two different timing requirements.
+
+An offer is accepted as soon as the acceptance is mailed.
+
+An offer is, however, only withdrawn as soon as the offeree receives the notice.
+
+
+It is critical to use registered mail in such cases.\\
+\quad The offeree could not refuse such a letter and then claim they did not get it.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Instantaneous Communication}
+
+Is it different for instantaneous communication, e.g., telephone, telex, e-mail?
+
+Yes -- the contract is formed as soon as the acceptance is received.
+
+Parties are aware of the communications and the possibility of any interruptions.
+
+The offer is accepted in the location where the acceptance is read.
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Irrevocability}
+
+Even if a contract says that the offer is open until a certain date, the offerer can withdraw it before that date if no acceptance has occurred.
+
+The alternative: the offeror may make the offer \alert{irrevocable} for a specified period of time, or until a specific date.
+
+Then the offer will remain open for that designated time and the offeree may accept the contract at any time prior to that date.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Irrevocable Offers}
+
+Because irrevocability is a term that is already in force.
+
+Even though the offer has not been accepted yet, the offeror is bound to the promise of irrevocability. 
+
+The offeror must \alert{seal} the contract to recognize this.
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Lapse of an Offer}
+
+We have already introduced the idea that an offer may lapse (expire).
+
+There are three ways:
+
+\begin{enumerate}
+	\item After a ``reasonable amount of time'' has passed without acceptance.
+	\item When a time limit specified in the contract is reached without acceptance.
+	\item When either of the parties dies or becomes insane prior to acceptance.*
+\end{enumerate}
+
+How much time is a ``reasonable amount of time''?\\
+\quad It depends on the circumstances of the case. 
+
+Insanity will come back in a later topic.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Lifespan of an Offer}
+
+There was an asterisk on the death or insanity of the offeree.
+
+If the offeree dies, there is no precedent that definitively says the offer cannot be accepted.
+
+Obviously, the deceased cannot accept him/herself.
+
+Can the lawyer or estate trustee (formerly called executor/executrix) accept the offer on behalf of the decedent?
+
+The best guess is ``yes'', but until there is a statue or ruling, it remains uncertain...
+
+\end{frame}
+
+
+
+
+\input{references}
+\end{document}
+
