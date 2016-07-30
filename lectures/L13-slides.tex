@@ -1,0 +1,250 @@
+\input{configuration}
+
+\title{Lecture 13 --- Negligence }
+
+\author{Jeff Zarnett \\ \small \texttt{jzarnett@uwaterloo.ca}}
+\institute{Department of Electrical and Computer Engineering \\
+  University of Waterloo}
+\date{\today}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+
+\begin{center}
+  \small{Acknowledgments: Douglas Harder~\cite{dwh}, Julie Vale~\cite{jv}}
+  \end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Unintentional Harm}
+
+In addition to intentional torts, there are unintentional torts -- a person causes harm without any intent to cause the harm.
+
+The victim may still deserve compensation.
+
+The question for consideration is:\\
+\quad Was the defendant \alert{negligent} in his/her actions?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Negligence}
+
+The Oxford English Dictionary refines negligence as:
+
+\begin{quote}
+Want of attention to what ought to be done or looked after; carelessness with regard to one's duty or business; lack of necessary or ordinary care in doing something.
+\end{quote}
+
+Or: a failure to take action that a reasonable or prudent person would take to protect another person/property from harm.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Foreseeability}
+
+An important component of negligence is \alert{foreseeability}~\cite{lba}.
+
+Should $A$ have foreseen that his actions would cause harm?
+
+It is not expected that $A$ has the power of clairvoyance; his ability to foresee the consequences need not be exceptional.
+
+Would a normally intelligent and alert person have foreseen that his conduct would have likely harmed someone?
+
+Suppose $A$ carelessly throws a lit cigarette into a trash can. An explosion follows, injuring $B$. Someone put a bottle of gasoline in the trash can.
+
+Was this foreseeable?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Foreseeable}
+
+A would be liable for a fire that occurs if normal trash, such as paper, is present in the can.
+
+But not for the explosion, which is an extraordinary event that would not normally be foreseeable.
+
+The courts generally have held that if harmful results are unforeseeable, A is not held responsible.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Standard of Care}
+
+Much debate in any tort law case is about the standard of care. 
+
+For the tort action to succeed, it must be demonstrated that there is an expected standard that the defendant has failed to meet.
+
+We will examine, specifically, the engineer's standard of care.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{The Engineer's Standard of Care}
+
+Engineers have a duty to use the reasonable care and skill of engineers of ordinary competence.
+
+This is measured against applicable standards at the time the work is done~\cite{lpe}.
+
+In 1974 the High Court of Justice for Ontario ruled in the case \textit{Dominion Chain Co. Ltd. v. Eastern Construction Co. et al}.
+
+The case concerned an alleged faulty construction of a factory roof.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Liability of the Engineer}
+
+The Court said~\cite{lpe}:
+
+\begin{quote}
+	It is trite law that an engineer is liable for incompetence, carelessness or negligence which results in damages to his employer and his is in the same position as any other professional or skilled person who undertakes his professional work for reward and is therefore responsible if he does or omits to do his professional undertakings with an ordinary and reasonable degree of care and skill.
+\end{quote}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Liability of the Engineer}
+
+Halsbury's test reads:
+
+\begin{quote}
+	Architects and engineers are bound to possess a reasonable amount of skill in the art or profession they exercise for reward, and to use a reasonable amount of care and diligence in the carrying out of work which they undertake, including the preparation of plans and specifications.
+\end{quote}
+
+... and... 
+
+\begin{quote}
+	The employer buys both skill and judgement, and the architect ought not to undertake work if it cannot succeed, and he should know whether it will or not.
+\end{quote}
+
+For discussion: how easy is it to predict if software will succeed?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Liability of the Engineer}
+
+Things can also get expensive:
+
+\begin{quote}
+... if the negligence or want of skill of the architect or engineer has occasioned loss to his employer, he will be liable to the latter in damages. These are not limited to the amount of remuneration which under the agreement the architect or engineer was to receive, but are measured by the actual loss occasioned...
+\end{quote}
+
+For this reason, liability insurance is \textbf{highly} recommended.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Negligence and Mistake}
+
+Consider the 1952 case of \textit{Ramsay and Penno v. The King}~\cite{lpe}.
+
+This was an action against the Crown involving the flooding of lands, alleging negligence in the design and construction of certain dams.
+
+Something bad happened, but a negative outcome is not necessarily an indication that there was a negligence.
+
+What if a mistake was made in the engineer's design of the dams?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Negligence and Mistake}
+
+The court stated:
+
+\begin{quote}
+	Whether or not there was negligence in regard to design and construction of the dam is a question of fact. Engineers are expected to be possessed of reasonably competent skill in the exercise of their particular calling, but not infallible, nor is perfection expected, and the most that can be required of them is the exercise of reasonable care and prudence in the light of scientific knowledge of the time, of which they should be aware...
+\end{quote}
+
+So the answer is no: a mistake is not necessarily negligence.
+
+But this is likely to be rare. Can you think of any examples?
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Negligence and Mistake}
+
+Remember that tort action can take place many years after the work has originally been 1. performed.
+
+It may be possible to demonstrate that the work was performed with the best available tools and knowledge at the time the work was done.
+
+2. In computer, aerospace, and other high tech industries, standards are not as well established as they are in, say, civil engineering.
+
+It is therefore harder to demonstrate that best practices were not followed.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Professional Engineers Act}
+
+We will return to the subject of the Professional Engineers Act later, but there is a definition of negligence in that act.
+
+Negligence is defined in it (paraphrased in~\cite{lpe}):
+\begin{quote}
+ an act or omission in the carrying out of work of a practitioner that constitutes a failure to maintain the standards that a reasonable and prudent practitioner would maintain in the circumstances.
+ \end{quote}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Determining if the Standard is Met}
+
+In cases where negligence is alleged, the case may turn on the question of whether the duty of care was breached.
+
+This will usually require expert testimony -- expert professional engineers who will be called to testify in court as to their opinions on the subject.
+
+Engineering reports may also be submitted for the court's consideration.
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Discussion Questions}
+
+Suppose you are being called as an expert witness.
+
+How would you assess if the standard is met in electrical engineering?
+
+How would you assess if the standard is met in computer hardware?
+
+How would you assess if the standard is met in computer software?
+
+\end{frame}
+
+\input{references}
+\end{document}
+
