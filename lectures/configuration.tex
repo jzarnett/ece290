@@ -20,6 +20,7 @@
 \usepackage{graphicx,xspace}
 \usepackage[normalem]{ulem}
 \usepackage{multicol}
+\usepackage{tabularx}
 
 \newcommand\SF[1]{$\bigstar$\footnote{SF: #1}}
 
@@ -59,6 +60,8 @@
          \fi%
 }
 
+\newcommand{\multiline}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 
 %\newcommand\q{\tikz \node[thick,color=black,shape=circle]{?};}
